@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.navbar-mobile{
+  display: none;
+}
+
+body{
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1440px;
+
+}
+
+/* shared Class start */
+.quicksand-font {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+  }
+  .white{
+    color: rgba(247, 247, 247, 1);
+  }
+  .color-sky-blue{
+    color: rgba(1, 172, 253, 1);
+  }
+  .bg-sky-blue{
+    background-color: rgba(1, 172, 253, 1);
+  }
+  .color-orange{
+    color: rgba(254, 163, 1, 1);
+  }
+  .bg-orange{
+    background-color: rgba(254, 163, 1, 1);
+  }
+  .color-black{
+    color: rgba(17, 17, 17, 1);
+  }
+  .bg-black{
+    background-color: rgba(17, 17, 17, 1);
+  }
+
+  .color-cyan{
+    color: rgba(5, 212, 223, 1);
+  }
+  .color-blue-purple{
+    color: rgba(93, 88, 239, 1);
+  }
+  .display-flex{
+    display: flex;
+  }
+  .btn-primary{
+    padding: 10px 60px;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+  }
+
+
+
+
+/* shared Class end */
+
+/* header */
+
+header{
+  padding: 20px 140px;
+}
+
+/* navbar start */
+nav{
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul li{
+  list-style: none;
+}
+nav ul li a{
+  text-decoration: none;
+  margin-right: 32px;
+  font-size:1.rem;
+  font-weight: bold;
+  color: black;
+
+}
+
+nav div{
+  
+  justify-content: center;
+  align-items: center;
+
+}
+.header-Contact-btn{
+  border: none;
+
+}
+
+.header-title{
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  
+
+}
+
+/* navbar end */
+
+
+
+
+
+
+
+
+
+/* Medium 768px device */
+
+@media screen and (max-width: 768px) {
+
+
+  header{
+    padding: 0px 0px;
+   
+
+  }
+  .navbar-dasktop{
+    display: none;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  .navbar-mobile{
+    display: flex;
+    padding: 16px 12px;
+    border-bottom: 1px solid rgba(254, 163, 1, 1);
+    
+   
+  }
+
+  nav div{
+    justify-content: start;
+    align-items: center;
+  
+  }
+
+  .fa-solid{
+    font-size: 30px;
+  }
+  
+}
