@@ -8,6 +8,7 @@ body {
   margin: 0 auto;
   padding: 0;
   max-width: 1440px;
+  background-color: #f7f7f7;
 }
 
 /* shared Class start */
@@ -55,6 +56,31 @@ body {
   font-weight: 600;
   border: none;
   color: #fff;
+}
+
+.card-gradient-1 {
+  background: linear-gradient(to top, #fff 10%, rgba(222, 245, 255, 0.8) 90%);
+}
+.card-gradient-2 {
+  background: linear-gradient(to top, #fff 10%, rgba(255, 244, 220, 0.8) 90%);
+}
+.card-gradient-3 {
+  background: linear-gradient(to top, #fff 10%, rgba(242, 232, 255, 0.8) 90%);
+}
+
+.section-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.btn-slide {
+  background-color: rgba(254, 163, 1, 1);
+  padding: 20px 25px;
+  font-size: 24px;
+  color: #fff;
+  border-radius: 50%;
 }
 
 /* shared Class end */
@@ -117,12 +143,77 @@ nav div {
 
 /* hero-section end */
 
+/* main */
+main section {
+  margin: 20px 140px;
+}
+/* curriculum-section start */
+
+.curriculum-section {
+  background-image: url(../assets/bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.curriculum-container {
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.curriculum-card {
+  padding: 48px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 18px;
+  box-shadow: 0 0 28px 0.9px rgba(0, 0, 0, 0.05);
+}
+.curriculum-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.curriculum-des {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #808080;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.curriculum-read-more {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.slide-btn-container {
+  margin-top: 60px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+/* curriculum-section end */
+
 /* Medium 768px device */
 
 @media screen and (max-width: 768px) {
+  main section {
+    margin: 20px 20px;
+  }
+
+  .btn-primary {
+    padding: 16px 24px;
+    font-size: 1rem;
+  }
+
   header {
     padding: 0px 0px;
   }
+  /* navbar */
   .navbar-dasktop {
     display: none;
     margin: 0;
@@ -143,6 +234,8 @@ nav div {
   .fa-solid {
     font-size: 30px;
   }
+
+  /* hero */
 
   .hero-kids-img {
     width: 100%;
@@ -173,8 +266,21 @@ nav div {
     margin-top: 18px;
   }
 
-  .btn-primary {
-    padding: 16px 24px;
-    font-size: 1rem;
+  /* curriculum */
+
+  .curriculum-container {
+    flex-direction: column;
   }
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .slide-btn-container {
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+
+
 }
