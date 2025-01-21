@@ -198,6 +198,122 @@ main section {
 }
 /* curriculum-section end */
 
+/* stories */
+
+.stories-card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.stories-container {
+  gap: 18px;
+  justify-content: center;
+  align-items: center;
+}
+
+.stories-card {
+  border-radius: 16px;
+  background-color: #fff;
+}
+
+.big-stories {
+  padding-bottom: 32px;
+}
+.stories-img {
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+}
+
+.stories-date,
+.stories-title,
+.stories-des {
+  margin-left: 37px;
+  margin-bottom: 20px;
+}
+
+.stories-des {
+  margin-bottom: 50px;
+}
+
+.stories-date {
+  border-radius: 20px;
+  margin-top: -30px;
+  background-color: rgb(4, 175, 167);
+  padding: 10px;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.view-all-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 140px;
+}
+
+.footer-section {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 170px;
+}
+
+.footer-containt {
+  width: 30%;
+}
+.footer-identity {
+  display: flex;
+  align-items: center;
+}
+.footer-title {
+  color: #fff;
+  font-size: 38px;
+  margin: 5px;
+}
+
+.footer-des {
+  color: #fff;
+  font-size: 20px;
+}
+
+footer ul li {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+footer ul {
+  padding: 0;
+}
+footer ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500px;
+  color: #fff;
+}
+
+.footer-about-title {
+  font-size: 24px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.footer-icon-title {
+  font-size: 26px;
+  font-weight: bold;
+  color: #fff;
+}
 /* Medium 768px device */
 
 @media screen and (max-width: 768px) {
@@ -282,5 +398,19 @@ main section {
     padding: 0;
   }
 
+  /* .footer-section */
 
+  .footer-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  footer {
+    padding: 20px 10px;
+  }
+
+  .footer-containt {
+    width: 90%;
+    margin-bottom: 30px;
+  }
 }
