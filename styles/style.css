@@ -89,6 +89,13 @@ body {
   border-radius: 50%;
 }
 
+
+.marquee-text{
+  tab-size: 24px;
+  font-weight: 500px;
+  padding: 10px;
+}
+
 /* shared Class end */
 
 /* header */
