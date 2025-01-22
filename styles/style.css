@@ -43,8 +43,14 @@ body {
 .color-cyan {
   color: rgba(5, 212, 223, 1);
 }
+.bg-cyan {
+  background-color: rgba(5, 212, 223, 1);
+}
 .color-blue-purple {
   color: rgba(93, 88, 239, 1);
+}
+.bg-blue-purple {
+  background-color: rgba(93, 88, 239, 1);
 }
 .display-flex {
   display: flex;
@@ -200,7 +206,7 @@ main section {
 
 /* stories */
 
-.stories-card-container {
+.grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 18px;
@@ -215,11 +221,9 @@ main section {
 .stories-card {
   border-radius: 16px;
   background-color: #fff;
+  position: relative;
 }
 
-.big-stories {
-  padding-bottom: 32px;
-}
 .stories-img {
   border-top-right-radius: 16px;
   border-top-left-radius: 16px;
@@ -233,16 +237,18 @@ main section {
 }
 
 .stories-des {
-  margin-bottom: 50px;
+  margin-top: 36px;
 }
-
+.stories-title {
+  margin-top: 24px;
+}
 .stories-date {
   border-radius: 20px;
-  margin-top: -30px;
-  background-color: rgb(4, 175, 167);
+  margin-top: -25px;
   padding: 10px;
   color: #fff;
   font-size: 1rem;
+  position: absolute;
 }
 
 .view-all-btn-container {
@@ -251,6 +257,10 @@ main section {
   align-items: center;
   margin-top: 80px;
   margin-bottom: 60px;
+}
+
+.big-post {
+  padding-bottom: 20px;
 }
 
 /* footer */
@@ -396,6 +406,29 @@ footer ul li a {
     display: none;
     margin: 0;
     padding: 0;
+  }
+
+  /* stories */
+
+  .big-post {
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .stories-img {
+    width: 100%;
+  }
+  .stories-title,
+  .stories-date {
+    font-size: 12px;
+  }
+
+  .stories-date,
+  .stories-title,
+  .stories-des {
+    margin-left: 18px;
+    margin-bottom: 20px;
   }
 
   /* .footer-section */
